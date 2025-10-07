@@ -1,0 +1,43 @@
+```css
+:root{
+--bg1:#ff9a9e;
+--bg2:#fecfef;
+--card:#ffffffdd;
+--accent:#ff5e7e;
+}
+html,body{height:100%;margin:0;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
+body{
+background: radial-gradient(1200px 600px at 10% 10%, rgba(255,255,255,0.08), transparent), linear-gradient(135deg,var(--bg1),var(--bg2));
+display:flex;align-items:center;justify-content:center;padding:24px;
+}
+.scene{position:relative;width:960px;max-width:100%;min-height:560px;border-radius:20px;padding:40px;box-shadow:0 20px 50px rgba(0,0,0,0.18);background:linear-gradient(180deg, rgba(255,255,255,0.35), rgba(255,255,255,0.12));backdrop-filter: blur(6px);overflow:hidden}
+.hearts{position:absolute;inset:0;pointer-events:none}
+.heart{position:absolute;transform:translate(-50%,-50%) rotate(45deg);background:var(--accent);border-radius:6px 6px 0 0;box-shadow:0 6px 20px rgba(0,0,0,0.15);opacity:0.9}
+.heart::before,.heart::after{content:"";position:absolute;width:100%;height:100%;background:var(--accent);border-radius:50%;}
+.heart::before{top:-50%;left:0}
+.heart::after{left:50%;top:0}
+@keyframes floatY{0%{transform:translate(-50%,-50%) translateY(10px) scale(1)}50%{transform:translate(-50%,-50%) translateY(-18px) scale(1.05)}100%{transform:translate(-50%,-50%) translateY(10px) scale(1)}}
+.content{position:relative;z-index:2;display:grid;grid-template-columns:1fr 360px;gap:30px;align-items:center}
+.card{background:var(--card);padding:28px;border-radius:16px;box-shadow:0 8px 30px rgba(0,0,0,0.12)}
+h1{margin:0 0 8px;font-size:28px;color:#3b1a22}
+p.lead{margin:0 0 16px;color:#5a2b37;font-size:16px;line-height:1.45}
+.poem{font-style:italic;color:#4c2430;line-height:1.6;margin-top:10px}
+.right{display:flex;flex-direction:column;align-items:center;justify-content:center}
+.photo-placeholder{width:100%;height:220px;border-radius:12px;background:linear-gradient(135deg,#ffd7e5,#fff1f7);display:flex;align-items:center;justify-content:center;color:#703246;font-weight:600}
+.btn{display:inline-block;padding:10px 16px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:600;margin-top:14px;cursor:pointer;border:none}
+.muted{font-size:13px;color:#7a4b56;margin-top:8px}
+.signature{margin-top:20px;font-weight:700;color:#52202a}
+.amo-voce{
+position:absolute;
+top:10px;
+right:20px;
+font-size:20px;
+font-weight:700;
+color:#ffffff;
+text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+background: rgba(255, 94, 126, 0.8);
+padding: 8px 14px;
+border-radius: 12px;
+}
+footer{position:absolute;left:20px;bottom:18px;font-size:13px;color:#4b2a31}
+@media (max-width:800px){.content{grid-template-columns:1fr;}.right{order:-1}.p
