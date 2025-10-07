@@ -138,3 +138,12 @@ footer{
   .right{order:-1}
   .photo-fixa{height:160px}
 }
+.photo-fixa {
+  width: 300px; /* largura da imagem */
+  height: 300px; /* altura da imagem */
+  background-image: url("https://private-user-images.githubusercontent.com/231787025/498418225-061e760a-bc69-41d2-a6cf-5a1b0db2784d.jpeg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnNlcnVjY29udGVudC5jb20iLCJrZXkiOiJrZXk1IiwiZXhwIjoxNzU5ODY3ODk3LCJuYmYiOjE3NTk4Njc1OTcsInBhdGgiOiIvMjMxNzg3MDI1LzQ5ODQxODIyNS0wNjFlNzYwYS1iYzY5LTQxZDItYTZjZi01YTFiMGRiMjc4NGQuanBlZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFEtNFpBJTI2MjAyNTEwMDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDA3VDIwMDYzN1omaVgtQW16LUV4cGlyZXM9MzAwWlgtQW16LVNpZ25hdHVyZT03MWUzM2M3NTIwZDEyODUwMTE2YTM1MjNmNjEzYjUwMzFmNDk0NzEyOTM2ZjFhMTUzN2UyZDlmM2EyZDQwMTRjWlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.XthjzWfugtb9TqvGvwnNwAWw7NQ3sUPHlXTtcmDt_hs");
+  background-size: cover; /* preenche a div */
+  background-position: center; /* centraliza a imagem */
+  border-radius: 12px; /* cantos arredondados */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* sombra suave */
+}
