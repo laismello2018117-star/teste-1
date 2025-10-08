@@ -106,7 +106,7 @@ body {
 .photo-fixa {
   width: 300px;
   height: 300px;
-  background-image: url("WhatsApp Image 2025-10-07 at 13.31.31.jpeg");
+  background-image: url("foto.jpeg");
   background-size: cover;
   background-position: center;
   border-radius: 12px;
@@ -120,6 +120,7 @@ footer {
   color: #ff5ca2;
   text-align: center;
 }
+
 
 
 
